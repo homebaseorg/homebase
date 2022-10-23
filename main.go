@@ -7,13 +7,15 @@ import (
 
 func main() {
 	router := gin.Default()
+	router.Static("/static", "./static")
 	router.LoadHTMLGlob("templates/*")
+
 	router.GET("/", getHome)
 	router.Run(":8080")
 
 }
 
-func getIndex(c *gin.Context) {
+func getHome(c *gin.Context) {
 	c.HTML(http.StatusOK, "home.tmpl", gin.H{
 		"title": "Home",
 	})
