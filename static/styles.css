@@ -38,12 +38,29 @@ aside, .chat, .content{
     width:auto;
     flex: 3 1 auto;
 }
-.chat{
-    background-color: black;
-    color: white;   
-   
+
+
+aside, .chat{
+    flex: 0.25 1 auto;
+    background-color: #f8f8f8;
+    text-align: center;
+    
 }
 
-aside{
-    flex: 0.25 1 auto;
+details {
+    border: 1px solid black;
 }
+
+summary{
+    cursor: pointer;
+    display: block;
+}
+
+
+summary::after {
+  content: ' ►';
+}
+details[open] summary:after {
+  content: " ▼";
+}
+
