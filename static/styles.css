@@ -1,66 +1,7 @@
-/* css reset */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
+.columns{
+    align-items: stretch;
+    padding:0;
 }
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* styles */
-
 body{
-    display:flex;
-    flex-direction: row wrap;
+    height:100%;
 }
-
-aside, .chat, .content{
-    height:100vh;
-}
-
-.content{
-    width:auto;
-    flex: 3 1 auto;
-}
-
-
-aside, .chat{
-    flex: 0.25 1 auto;
-    background-color: #f8f8f8;
-    text-align: center;
-    
-}
-
-details {
-    border: 1px solid black;
-}
-
-summary{
-    cursor: pointer;
-    display: block;
-}
-
-
-summary::after {
-  content: ' ►';
-}
-details[open] summary:after {
-  content: " ▼";
-}
-

@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8" />	
     <title>{{ .title }}</title>
-    <link href="/static/styles.css" rel="stylesheet"/>
+  
+    <link href="/static/bulma.css" rel="stylesheet"/>
+    <link href="/static/styles.css" rel="stylesheet"/>		
+
 
   </head>
 
-  <body>
-    <aside>
+  <body class="columns is-desktop">
+    <aside class="column">
       Creators
       <details>
 	<summary>
@@ -20,19 +23,16 @@
       </details>
     </aside>
 
-    <section class="content">
+    <section class="column is-three-quarters">
       <iframe height="100%" width="100%" style="border:none;overflow:hidden" src="https://www.youtube.com/embed/tTMJwmkiFzU" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
       {{ .content }}
     </section>
     
-    <section class="chat">
+    <section class="column">
       Chat
       {{ .chat }}
     </section>
   </body>
-  
-  <footer>
-  </footer>
   
 </html>
 
