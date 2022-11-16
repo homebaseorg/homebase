@@ -1,7 +1,24 @@
-.columns{
-    align-items: stretch;
-    padding:0;
+
+html {
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
-body{
+
+body {
+
+    flex-grow:1;
+}
+
+iframe{
     height:100%;
+    width:100%;
 }
+
+.column{
+    align-items: stretch;
+    
+    padding-bottom:0;
+}
+
